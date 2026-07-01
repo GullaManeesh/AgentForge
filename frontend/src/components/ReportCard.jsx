@@ -3,17 +3,17 @@ import remarkGfm from "remark-gfm";
 import { FileText } from "lucide-react";
 
 const markdownComponents = {
-  h1: ({ children }) => <h1 className="mb-6 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{children}</h1>,
-  h2: ({ children }) => <h2 className="mb-4 mt-10 border-b border-slate-200 pb-3 text-2xl font-semibold tracking-tight text-slate-950">{children}</h2>,
-  h3: ({ children }) => <h3 className="mb-3 mt-8 text-xl font-semibold tracking-tight text-slate-950">{children}</h3>,
-  p: ({ children }) => <p className="mb-5 leading-8 text-slate-700">{children}</p>,
-  ul: ({ children }) => <ul className="mb-5 list-disc space-y-3 pl-6 text-slate-700">{children}</ul>,
-  ol: ({ children }) => <ol className="mb-5 list-decimal space-y-3 pl-6 text-slate-700">{children}</ol>,
-  li: ({ children }) => <li className="leading-8">{children}</li>,
-  strong: ({ children }) => <strong className="my-4 block font-semibold text-slate-950">{children}</strong>,
-  hr: () => <hr className="my-8 border-slate-200 sm:my-10" />,
+  h1: ({ children }) => <h1 className="mb-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{children}</h1>,
+  h2: ({ children }) => <h2 className="mb-3 mt-6 border-b border-slate-200 pb-2 text-2xl font-semibold tracking-tight text-slate-950">{children}</h2>,
+  h3: ({ children }) => <h3 className="mb-2 mt-5 text-xl font-semibold tracking-tight text-slate-950">{children}</h3>,
+  p: ({ children }) => <p className="mb-2 leading-7 text-slate-700">{children}</p>,
+  ul: ({ children }) => <ul className="mb-2 list-disc space-y-1 pl-6 text-slate-700">{children}</ul>,
+  ol: ({ children }) => <ol className="mb-2 list-decimal space-y-1 pl-6 text-slate-700">{children}</ol>,
+  li: ({ children }) => <li className="leading-7">{children}</li>,
+  strong: ({ children }) => <strong className="font-semibold text-slate-950">{children}</strong>,
+  hr: () => <hr className="my-5 border-slate-200" />,
   blockquote: ({ children }) => (
-    <blockquote className="my-8 border-l-4 border-slate-300 bg-slate-50 px-6 py-5 text-slate-600">
+    <blockquote className="my-2 border-l-4 border-slate-300 bg-slate-50 px-6 py-5 text-slate-600">
       {children}
     </blockquote>
   ),
@@ -29,9 +29,9 @@ const markdownComponents = {
     inline ? (
       <code className="rounded bg-slate-100 px-1.5 py-0.5 text-[0.92em] font-medium text-slate-900">{children}</code>
     ) : (
-      <code className="block overflow-x-auto rounded-2xl bg-slate-950 px-6 py-5 font-mono text-sm leading-8 text-slate-100">{children}</code>
+      <code className="block overflow-x-auto rounded-2xl bg-slate-950 px-6 py-5 font-mono text-sm leading-7 text-slate-100">{children}</code>
     ),
-  pre: ({ children }) => <pre className="my-8 overflow-x-auto rounded-2xl bg-slate-950 p-0 text-slate-100">{children}</pre>,
+  pre: ({ children }) => <pre className="my-5 overflow-x-auto rounded-2xl bg-slate-950 p-0 text-slate-100">{children}</pre>,
 };
 
 export default function ReportCard({ report }) {

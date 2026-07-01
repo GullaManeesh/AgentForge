@@ -38,13 +38,13 @@ function buildCritiqueMarkdown(critique) {
 }
 
 const markdownComponents = {
-  h2: ({ children }) => <h2 className="mb-4 text-2xl font-semibold tracking-tight text-slate-950">{children}</h2>,
-  h3: ({ children }) => <h3 className="mb-3 mt-8 text-lg font-semibold tracking-tight text-slate-950">{children}</h3>,
-  p: ({ children }) => <p className="mb-5 leading-8 text-slate-700">{children}</p>,
-  ul: ({ children }) => <ul className="mb-5 list-disc space-y-3 pl-6 text-slate-700">{children}</ul>,
-  li: ({ children }) => <li className="leading-8">{children}</li>,
-  strong: ({ children }) => <strong className="my-4 block font-semibold text-slate-950">{children}</strong>,
-  hr: () => <hr className="my-8 border-slate-200 sm:my-10" />,
+  h2: ({ children }) => <h2 className="mb-3 text-2xl font-semibold tracking-tight text-slate-950">{children}</h2>,
+  h3: ({ children }) => <h3 className="mb-2 mt-5 text-lg font-semibold tracking-tight text-slate-950">{children}</h3>,
+  p: ({ children }) => <p className="mb-2 leading-7 text-slate-700">{children}</p>,
+  ul: ({ children }) => <ul className="mb-3 list-disc space-y-1 pl-6 text-slate-700">{children}</ul>,
+  li: ({ children }) => <li className="leading-7">{children}</li>,
+  strong: ({ children }) => <strong className="font-semibold text-slate-950">{children}</strong>,
+  hr: () => <hr className="my-5 border-slate-200" />,
 }
 
 export default function CritiqueCard({ critique }) {
